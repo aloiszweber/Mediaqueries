@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 470px) {
+  .container {
+    background: linear-gradient(rgb(107, 107, 184), white );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .item1 {
+    border: solid black 2px;
+    height: 330px;
+    width: 240px;
+  }
+
+  .item2 {
+    border: solid black 2px;
+    height: 450px;
+    width: 240px;
+    margin-bottom: 2vh;
+  }
+
+  .item3 {
+    border: solid black 2px;
+    height: 550px;
+    width: 240px;
+  }
+}
+
+
+@media only screen and (min-width: 470px) and (max-width: 768px) {
+  .container {
+    background: linear-gradient(rgb(107, 107, 184), white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #burger {
+    width: 50px;
+    height: 40px;
+    background-image: url('./../assets/onde-sonore.jpg');
+    background-position: center;
+    background-size: 4.1rem;
+    cursor: pointer;
+    margin-right: 53vw;
+  }
+
+  #burger_box{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+  }
+
+  .burger_lines {
+    color: black;
+  }
+
+  #navbar{
+    height: 5vh;
+    margin: 2vh 0vw 0vw 2vh;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+    transform: translate(0px, -10px);
+  }
+
+  li {
+    list-style-type: none;
+
+  }
+
+  #playlist:hover {
+    color: blue;
+  }
+
+  #live:hover {
+    color: red;
+  }
+
+  #demo:hover {
+    color: green;
+  }
+
+  #onde {
+    height: 4vh;
+    width: 8vh;
+    margin-right: 52vw;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 30px;
+    text-align: justify;
+    height: 300vh;
+    margin-bottom: 3vh;
+  }
+
+  .item1 {
+    border: solid black 1px;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 0vh 2vw;
+  }
+
+  .item2 {
+    border: solid black 1px;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 2vh 2vw;
+  }
+
+  .item3 {
+    border: solid black 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 2vh 2vw;
+  }
+
+  .artist {
+    margin-bottom: 2vh;
+  }
+
+  .title_music {
+    text-decoration: none;
+    color: black;
+  }
+
+  .p_stream {
+    margin-bottom: 2vh;
+  }
+
+  .music {
+    height: 5vh;
+    width: 28vw;
+  }
+
+}
+
+h2 {
+  margin-top: 2vh;
+  align-self: center;
+  font-weight: 300;
+}
+
+.streaming_platform {
+  text-decoration: none;
+}
+
+footer {
+  height: 20vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+#dayz {
+  margin-left: 2vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    background: linear-gradient(rgb(107, 107, 184), white);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #burger {
+    width: 50px;
+    height: 40px;
+    background-image: url('./../assets/onde-sonore.jpg');
+    background-position: center;
+    background-size: 4.1rem;
+    cursor: pointer;
+    margin-right: 68vw;
+  }
+
+  #burger_box{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+  }
+
+  .burger_lines {
+    color: black;
+  }
+
+  #navbar{
+    height: 5vh;
+    margin: 2vh 0vw 0vw 2vh;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+    transform: translate(0px, -10px);
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  #playlist:hover {
+    color: blue;
+  }
+
+  #live:hover {
+    color: red;
+  }
+
+  #demo:hover {
+    color: green;
+  }
+
+  #onde {
+    height: 4vh;
+    width: 8vh;
+    margin-right: 69vw;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: justify;
+    height: 200vh;
+    margin-bottom: 40vh;
+  }
+
+  .item1 {
+    border: solid black 2px;
+    height: 235vh;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7vw;
+    padding: 0vh 1vw 0vh 2vw;
+  }
+
+  .item2 {
+    border: solid black 2px;
+    height: 153vh;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 2vh 2vw;
+    margin-right: 7vw;
+  }
+
+  .item3 {
+    border: solid black 2px;
+    height: 153vh;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 2vh 2vw;
+  }
+}
+
+.title_music {
+  text-decoration: none;
+  color: black;
+}
+
+.artist {
+  margin-bottom: 2vh;
+}
+
+.p_stream {
+  margin-bottom: 2vh;
+}
+
+h2 {
+  align-self: center;
+  font-weight: 300;
+}
+
+.streaming_platform {
+  text-decoration: none;
+}
