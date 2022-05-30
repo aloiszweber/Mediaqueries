@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="./style/style.css" />
     <title>Document</title>
   </head>
+  <div id="alert">
+      <p> You are going in my website music. </p>
+      <p> Are you sure to continue ? </p>
+      <div class="div_button">
+        <input class="pop-up_button" id="enter" type="button" value="Enter">
+        <input class="pop-up_button" id="cancel" type="button" value="Cancel">
+      </div>
+    </div>
   <header>
     <nav id="navbar">
       </div>
       <ul>
         <li> <div id="burger">
           <div id="burger_box">
-            <span class="burger_lines"> Home </span>
-            <span class="burger_lines"> About </span>
-            <span class="burger_lines"> News </span>
-            <span class="burger_lines"> Blog </span>
+            <span class="burger_lines" id="home"> Home </span>
+            <span class="burger_lines" id="about"> About </span>
+            <span class="burger_lines" id="news"> News </span>
+            <span class="burger_lines" id="blog"> Blog </span>
           </div>
+        </div> </li>
+        <li id="li_burger"> <div class="box_search"> 
+          <form action="">
+              <input id="search" type="search" value="test" placeholder="search" name="search">
+              <button id="make_search" type="submit"> <i class="fa fa-search"> </i></button>
+          </form>
         </div> </li>
         <li id="playlist"> Playlist </li>
         <li id="live"> Live </li>
@@ -34,7 +48,7 @@
               <p class="artist"> Artist : Disturbed </p>
               <p class="p_stream"> Streaming host : <a class="streaming_platform" href="https://www.youtube.com/"> YouTube </a>, 
                 <a class="streaming_platform" href="https://www.spotify.com/"> Spotify </a>, <a class="streaming_platform" href="https://www.deezer.com/"> Deezer </a> </p>
-              <div> 
+              <div class="item1_bis"> 
                   <p class="paragraph"> Can you feel that?
                   Ah, shit
                   Oh, ah, ah, ah, ah
@@ -114,7 +128,7 @@
               <p class="artist"> Artist : Green Day </p>
               <p class="p_stream"> Streaming host : <a class="streaming_platform" href="https://www.youtube.com/"> YouTube </a>, 
                 <a class="streaming_platform" href="https://www.spotify.com/"> Spotify </a> </p>
-            <div> Lyrics: 
+            <div class="item2_bis"> Lyrics: 
               <p class="paragraph"> Say hey!
               Cha
               
@@ -168,7 +182,7 @@
             <p class="artist"> Artist : Linkin Park </p>
             <p class="p_stream"> Streaming host : <a class="streaming_platform" href="https://www.youtube.com/"> YouTube </a>, 
               <a class="streaming_platform" href="https://www.spotify.com/"> Spotify </a> </p>
-            <div> Lyrics:
+            <div class="item3_bis"> Lyrics:
               <p class="paragraph"> I remembered black skies
               The lightning all around me
               I remembered each flash
@@ -233,7 +247,13 @@
     </div>
     <footer>
       <p id="dayz"> prod by Dayz_musik </p>
-      <p> Contact us </p>
+      <div id="contactUs"> Contact us </div>
+      <div id="box_contactUs">
+        <p id="box_contactUs_line1"> 04 333 32 32 </p>
+        <p id="box_contactUs_line2"> dayz_musik@gmail.com </p>
+        <p id="box_contactUs_line3"> Rue des Alyzees 174, 4020 Liège </p>
+      </div>
     </footer>
+    <script src="index.js"> </script>
   </body>
 </html>
