@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#alert {
+  width: 250px;
+  height: 100px;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 10px;
+  border: solid black 1px;
+  transition: transform 3s ease-in-out;
+  position: absolute;
+  background-color: rgba(255, 100, 100, 0.4);
+  color: rgb(243, 230, 230);
+  z-index: 1;
+}
+
+#navbar ul {
+  transform: translate(-1vw, -10px);
+}
+
+#navbar ul #ul-col2 {
+  position: fixed;
+  display: flex;
+  gap: 5vw;
+  right: 2.5vw;
+}
+
+h2 {
+  margin-top: 1vw;
+  align-self: center;
+  font-weight: 300;
+}
+
+.music {
+  height: 5vh;
+  width: 28vw;
+  max-width: 220px;
+  margin-bottom: 1vw;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 98vw;
+}
+
+header {
+  width: 98vw;
+  margin-left: 1vw;
+}
+
+.container {
+  width: 98vw;
+  margin-left: 1vw;
+  max-height: 830px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+  background-color: white;
+  height: auto;
+  width: 99vw;
+}
+
+#downpage-options {
+  display: flex;
+  gap: 10vw;
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 470px) {
+  
+  .streaming_platform {
+    text-decoration: none;
+  }
+  
+  #box_contactUs {
+    padding: 2vw;
+    background-color: rgba(124, 124, 182, 0.6);
+    color: white;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  #box_contactUs_line1 {
+    margin-bottom: 3px;
+  }
+  
+  #box_contactUs_line2 {
+    margin-bottom: 3px;
+  }
+  
+  #dayz {
+    margin-left: 2vw;
+  }
+
+  .container {
+    background: rgb(33, 33, 83);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .item1 {
+    border: solid black 2px;
+    height: fit-content;
+    width: 240px;
+  }
+
+  .item2 {
+    border: solid black 2px;
+    height: fit-content;
+    width: 240px;
+    margin-bottom: 2vh;
+  }
+
+  .item3 {
+    border: solid black 2px;
+    height: fit-content;
+    width: 240px;
+  }
+}
+
+
+@media only screen and (min-width: 470px) and (max-width: 768px) {
+  .container {
+    background: linear-gradient(rgb(107, 107, 184), white);
+    min-height: 100vh;
+    max-height: 1680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .div_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+    margin-left: -11px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .pop-up_button {
+    width: 50px;
+    padding: 2px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  #burger {
+    width: 50px;
+    height: 40px;
+    background-image: url('./../assets/onde-sonore.jpg');
+    background-position: center;
+    background-size: 4.1rem;
+    cursor: pointer;
+    margin-right: 17vw;
+  }
+
+  form {
+    display: flex;
+    gap: 2px;
+  }
+
+  #make_search {
+    width: 20px;
+    height: 20px;
+    background-image: url('./../assets/recherche.png');
+    background-size: cover;
+  }
+
+  #burger_box{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0.7;
+  }
+
+  .burger_lines {
+    color: black;
+  }
+
+  #home:hover {
+    color: blue;
+  }
+
+  #about:hover {
+    color: violet;
+  }
+
+  #news:hover {
+    color: red;
+  }
+
+  #blog:hover {
+    color: green;
+  }
+
+  #navbar{
+    margin: 2vh 0vw 0vw 2vh;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+    transform: translate(0px, -10px);
+  }
+
+  li {
+    list-style-type: none;
+
+  }
+
+  #playlist:hover {
+    color: blue;
+  }
+
+  #live:hover {
+    color: violet;
+  }
+
+  #demo:hover {
+    color: green;
+  }
+
+
+  #onde {
+    height: 4vh;
+    width: 8vh;
+    margin-right: 52vw;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 30px;
+    text-align: justify;
+    margin-bottom: 18.93px;
+  }
+
+  .item1 {
+    border: solid black 1px;
+    width: 50%;
+    height: fit-content;
+    max-height: 912px;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 0vh 2vw;
+    overflow: scroll;
+  }
+
+  .item2 {
+    border: solid black 1px;
+    height: fit-content;
+    max-height: 912px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 2vh 2vw;
+    overflow: scroll;
+  }
+
+  .item3 {
+    border: solid black 1px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 2vh 2vw;
+  }
+
+  .artist {
+    margin-bottom: 2vh;
+  }
+
+  .title_music {
+    text-decoration: none;
+    color: black;
+  }
+
+  .p_stream {
+    margin-bottom: 2vh;
+  }
+
+  .music {
+    height: 5vh;
+    width: 28vw;
+  }
+
+  #contactUs {
+    cursor: pointer;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    background: linear-gradient(rgb(107, 107, 184), white);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .div_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+    margin-left: -11px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .pop-up_button {
+    width: 50px;
+    padding: 2px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  #burger {
+    width: 50px;
+    height: 40px;
+    background-image: url('./../assets/onde-sonore.jpg');
+    background-position: center;
+    background-size: 4.1rem;
+    cursor: pointer;
+  }
+
+  form {
+    display: flex;
+    gap: 2px;
+  }
+
+  #make_search {
+    width: 20px;
+    height: 20px;
+    background-image: url('./../assets/recherche.png');
+    background-size: cover;
+  }
+
+  #burger_box{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0.7;
+  }
+
+  .burger_lines {
+    color: black;
+  }
+
+  #home:hover {
+    color: blue;
+  }
+
+  #about:hover {
+    color: violet;
+  }
+
+  #news:hover {
+    color: red;
+  }
+
+  #blog:hover {
+    color: green;
+  }
+
+  #navbar{
+    margin: 2vh 0vw 0vw 2vh;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+    transform: translate(0px, -10px);
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  #playlist:hover {
+    color: blue;
+  }
+
+  #live:hover {
+    color: violet;
+  }
+
+  #demo:hover {
+    color: green;
+  }
+
+  #onde {
+    height: 4vh;
+    width: 8vh;
+    margin-right: 69vw;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    text-align: justify;
+    margin-bottom: 252.4px;
+  }
+
+  .item1 {
+    max-height: 735px;
+    overflow: scroll;
+    border: solid black 1px;
+    height: fit-content;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7vw;
+    padding: 0vh 1vw 0vh 2vw;
+  }
+
+  .item2 {
+    max-height: 735px;
+    overflow: scroll;
+    border: solid black 1px;
+    height: fit-content;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 2vh 2vw;
+    margin-right: 7vw;
+  }
+
+  .item3 {
+    max-height: 735px;
+    overflow: scroll;
+    border: solid black 1px;
+    height: fit-content;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw 2vh 2vw;
+  }
+}
+
+.title_music {
+  text-decoration: none;
+  color: black;
+}
+
+.artist {
+  margin-bottom: 2vh;
+}
+
+.p_stream {
+  margin-bottom: 2vh;
+}
+
+h2 {
+  align-self: center;
+  font-weight: 300;
+}
+
+.streaming_platform {
+  text-decoration: none;
+}
+
+#box_contactUs {
+  padding: 2vw;
+  background-color: rgba(124, 124, 182, 0.6);
+  color: white;
+  border-radius: 10px;
+  display: none;
+}
+
+#box_contactUs_line1 {
+  margin-bottom: 3px;
+}
+
+#box_contactUs_line2 {
+  margin-bottom: 3px;
+}
+
+#contactUs {
+  cursor: pointer;
+}
